@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDesign - Thiết kế nội thất</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe6ng-KL5s-JJVYhsTCv7bPO59iMph2CcCvw&usqp=CAU">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header flex">
+           <div class="grid wide flex al-center header__wrap-content">
+                <label for="check-open-menu-mobile" class="header__menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="#" class="header__logo">
+                    <img src="https://vdesign.exdomain.net/image/catalog/logo/vdesign_logo.png" alt="" class="header__img">
+                </a>
+                <input type="checkbox" name="" id="check-open-menu-mobile">
+                <label for="check-open-menu-mobile" class="overlay-menu-mobile"></label>
+                <div class="header__wrap-menu">
+                    <div class="header__top-menu">
+                        <img src="https://vdesign.exdomain.net/image/catalog/logo/vdesign_logo.png" alt="" class="header__top-menu-img">
+                    </div>
+                    <ul class="navbar flex">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Giới thiệu</a>
+                        </li>
+                        <li class="navbar__item navbar__item--presently-mini-navbar-one">
+                            <a href="#" class="navbar__link">
+                                Thiết kế nội thất
+                                <i class="navbar__dow-icon fa-solid fa-chevron-down"></i>
+                            </a>
+                            
+                            <ul class="mini-navbar ps-absolute">
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Thiết kế nội thất biệt thự</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Thiết kế nội thất chung cư</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Thiết kế nội thất khách sạn</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Thiết kế kiến trúc</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Dự án</a>
+                        </li>
+                        <li class="navbar__item navbar__item--presently-mini-navbar-two">
+                            <a href="#" class="navbar__link">
+                                Sản phẩm nội thất
+                                <i class="navbar__dow-icon fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="mini-navbar ps-absolute ">
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Đồ Gỗ Phòng khách</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Đồ Gỗ Nhà Bếp</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Đồ Gỗ Phòng Ngủ</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Đồ Gỗ Văn Phòng</a>
+                                </li>
+                                <li class="mini-navbar__item">
+                                    <a href="#" class="mini-navbar__link">Đồ Gỗ Trang trí</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Tin tức</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__link--no-line">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__icon-wrap flex al-center">
+                    <label class="header__icon-search ps-relative" for="check-presently-search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        <input type="checkbox" name="" id="check-presently-search">
+                        <form class="header__search ps-absolute al-center" action="" >
+                            <input class="header__search-input" type="text" placeholder="Tìm kiếm">
+                            <div class="header__icon-mini-search ">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </form>
+                    </label>
+                    <div class="header__icon-cart ps-relative">
+                        <i class="fa fa-shopping-bag"></i>
+                        <div class="header__cart">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmiRBR_19JyGdceNZQ2iizUZcJWO53gWLUrkIlvTDAyTK_FBZcQvLNWfnluWoWEctpUE&usqp=CAU" alt="" class="header__cart-img w-100">
+                            <span class="header__cart-title">Giỏ hàng của bạn trống!</span>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+        </header>
+        <div class="slider ps-relative">
+            <div class="slider__img">
+                <img class="w-100 slider__img-item" src="https://vdesign.exdomain.net/image/cache/catalog/slider/thiet-ke-noi-that-chung-cu-1920x550.jpg" alt="">
+            </div>
+            <div class="slider-title ps-absolute hide-on-tablet-mobile">
+                <h2 class="slider-title-heading">Thiết kế nội thất</h2>
+                <span class="slider-title__description">Chuyên gia trong thiết kế nội thất chung cư, biệt thự, khách sạn</span>
+                <a href="#" class="slider-title__btn">
+                    Xem thêm
+                    <i class="fa-solid fa-right-long"></i>
+                </a>
+            </div>
+        </div>
+        <div class="content">   
+            <!-- category -->
+            <div class="category">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="category__wrap ps-relative">
+                                <div class="category__img ps-absolute flex al-center">
+                                    <img class="" src="https://vdesign.exdomain.net/image/cache/catalog/icon/noithatchungcu1-64x64.png" alt="">
+                                </div>
+                                <h3 class="category__name">Nội thất Chung cư</h3>
+                                <span class="category__description">Giải pháp thiết kế nội thất chung cư giàu thẩm mỹ.</span>
+                                <a href="#" class="category__btn flex al-center">
+                                    Đọc thêm
+                                    <i class="category__btn-icon fa-solid fa-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="category__wrap ps-relative">
+                                <div class="category__img ps-absolute flex al-center">
+                                    <img class="" src="https://vdesign.exdomain.net/image/cache/catalog/icon/noithatbietthu1-64x64.png" alt="">
+                                </div>
+                                <h3 class="category__name">Nội thất Biệt thự</h3>
+                                <span class="category__description">Giải pháp cho không gian sống hiện đại, đầy đủ tiện ích.</span>
+                                <a href="#" class="category__btn flex al-center">
+                                    Đọc thêm
+                                    <i class="category__btn-icon fa-solid fa-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="category__wrap ps-relative">
+                                <div class="category__img ps-absolute flex al-center">
+                                    <img class="" src="https://vdesign.exdomain.net/image/cache/catalog/icon/noithatchungcu1-64x64.png" alt="">
+                                </div>
+                                <h3 class="category__name">Nội thất Chung cư</h3>
+                                <span class="category__description">Giải pháp nội thất khách sạn tinh tế tối ưu về công năng.</span>
+                                <a href="#" class="category__btn flex al-center">
+                                    Đọc thêm
+                                    <i class="category__btn-icon fa-solid fa-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- introduce -->
+            <div class="introduce">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-5 m-12 c-12 mb-60px-mobile introduce__wrap ps-relative">
+                            <div class="introduce__img">
+                                <img class="w-100" src="https://vdesign.exdomain.net/image/catalog/decorate/about-image.jpg" alt="">
+                            </div>
+                            <div class="introduce__title">
+                                <span class="introduce__description">Kinh nghiệm & Kiến thức tốt về thiết kế nội thất</span>
+                                <span class="introduce__name">Johnson, CEO & Founder</span>
+                            </div>
+                        </div>
+                        <div class="col l-7 m-12 c-12 mb-60px-mobile introduce-about">
+                            <span class="introduce-about__title">VDESIGN</span>
+                            <h3 class="introduce-about__name">ĐỘI NGŨ THIẾT KẾ NỘI THẤT CHUYÊN NGHIỆP</h3>
+                            <span class="introduce-about__description-one">
+                                Quy tụ đội ngũ nhân sự lành nghề là những kiến trúc sư, nhân viên thiết kế có trình độ chuyên môn cao, tác phong chuyên nghiệp và sẵn sàng lắng nghe, thấu hiểu khách hàng. Đội ngũ chúng tôi cũng không ngừng trau dồi để nâng cao trình độ với mong muốn nỗ lực đáp ứng nhu cầu ngày càng đa dạng của khách hàng.
+                            </span>
+                            <span class="introduce-about__description-two">
+                                Công ty liên tục cập nhật những xu hướng phong cách thiết kế nội thất mới nhất, giúp quý khách hàng sở hữu những sản phẩm nội thất hợp thời đại, mang phong cách độc đáo và khác biệt.
+                            </span>
+                            <div class="introdue-mission flex al-center ps-relative">
+                                <div class="introdue-mission__img">
+                                    <i class="fa-solid fa-earth-europe"></i>
+                                </div>
+                                <div class="introdue-mission__title">
+                                    <span class="introdue-mission__title-name">Giá trị cốt lõi</span>
+                                    <span class="introdue-mission__title-description">Mang đến không gian hoàn hảo về thẩm mỹ, hữu dụng về công năng, mang lại cuộc sống tiện nghi và nâng tầm không gian sống cho khách hàng.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- infrastructure -->
+            <div class="infrastructure ps-relative"> 
+                <div class="grid wide ps-relative">
+                   <div class="head">
+                        <h4 class="infrastructure__mini-heading">THĂM QUAN</h4>
+                        <h3 class="infrastructure__heading">VĂN PHÒNG VDESIGN</h3>
+                        <div class="infrastructure__wrap-description">
+                            <span class="infrastructure__description">Cơ sở vật chất hiện đại với 4 văn phòng thiết kế, 10.000m2 nhà xưởng hiện tại</span>
+                            <span class="infrastructure__description">cùng đội ngũ nhân sự 10+ năm kinh nghiệm</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="infrastructure__item ps-relative">
+                              
+                                <div class="infrastructure__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/vdesign/v1-7-400x250.jpg" alt="" class="infrastructure__img">
+                                    <div class="infrastructure__overlay ps-absolute"></div>
+                                </div>
+                                <div class="infrastructure__title flex ps-relative al-center">
+                                    <div class="infrastructure__plus ps-absolute">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <div class="infrastructure__icon">
+                                        <i class="fa-solid fa-pen-ruler"></i>
+                                    </div>
+                                    <div class="infrastructure__name-wrap">
+                                        <h4 class="infrastructure__name">Văn Phòng Thiết kế</h4>
+                                        <span class="infrastructure__mini-description">Văn Phòng Thiết kế với đầy đủ trang thiết bị hiện đại nhất, nơi các nhà thiết kế tạo ra những bản vẽ thiết kế hoàn hảo nhất cho từng sản phẩm.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="infrastructure__item ps-relative">
+                              
+                                <div class="infrastructure__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/vdesign/v2-1%20(1)-400x250.jpg" alt="" class="infrastructure__img">
+                                    <div class="infrastructure__overlay ps-absolute"></div>
+                                </div>
+                                <div class="infrastructure__title flex ps-relative al-center">
+                                    <div class="infrastructure__plus ps-absolute">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <div class="infrastructure__icon">
+                                        <i class="fa-solid fa-landmark"></i>
+                                    </div>
+                                    <div class="infrastructure__name-wrap">
+                                        <h4 class="infrastructure__name">Đội ngũ Thi công</h4>
+                                        <span class="infrastructure__mini-description">Đội ngũ Thi công với tay nghề cao, không ngừng nâng cao tay nghề đem đến những sản phẩm với độ tinh xảo cao về cả đường nét và chất liệu.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="infrastructure__item ps-relative">
+                              
+                                <div class="infrastructure__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/vdesign/working-3-400x250.jpg" alt="" class="infrastructure__img">
+                                    <div class="infrastructure__overlay ps-absolute"></div>
+                                </div>
+                                <div class="infrastructure__title flex ps-relative al-center">
+                                    <div class="infrastructure__plus ps-absolute">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <div class="infrastructure__icon">
+                                        <i class="fa-sharp fa-solid fa-city"></i>
+                                    </div>
+                                    <div class="infrastructure__name-wrap">
+                                        <h4 class="infrastructure__name">Xưởng Sản xuất</h4>
+                                        <span class="infrastructure__mini-description">Xưởng sản xuất siêu hiện đại 10.000m2 là chìa khóa để biến bản thiết kế thành những thực thể sinh động với chất lượng tốt nhất.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project -->
+            <div class="project">
+                <div class="project__head">
+                    <span class="project__name-mini">DỰ ÁN</span>
+                    <h3 class="project__name">CÁC DỰ ÁN HOÀN THÀNH MỚI NHẤT</h3>
+                </div>
+                <div class="grid">
+                    <div class="row mg">
+                        <div class="col l-2-4 m-6 c-12 pd">
+                            <div class="project__item ps-relative">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/projects/thi-cong-noi-that-can-ho-chung-cu-vinhomes-central-park-768x561-250x280.jpg" alt="" class="w-100 project__img">
+
+                                <span class="project__item-name ps-absolute">Thiết kế căn hộ Vinhome Central Park</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12 pd">
+                            <div class="project__item ps-relative">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/projects/phong-cach-thiet-ke-noi-that8-250x280.png" alt="" class="w-100 project__img">
+
+                                <span class="project__item-name ps-absolute">Thiết kế nội thất nhà phố Quận 10</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12 pd">
+                            <div class="project__item ps-relative">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/projects/thiet-ke-noi-that-phong-khach-biet-thu-vinhomes-riverside-250x280.png" alt="" class="w-100 project__img">
+
+                                <span class="project__item-name ps-absolute">Thiết kế biệt thự The Hamony</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12 pd">
+                            <div class="project__item ps-relative">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/projects/thiet-ke-noi-that-khach-san1-250x280.jpg" alt="" class="w-100 project__img">
+
+                                <span class="project__item-name ps-absolute">Thiết kế khách sạn tại Phú Quốc</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12 pd">
+                            <div class="project__item ps-relative">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/projects/thi-cong-noi-that-can-ho-chung-cu-vinhomes-central-park-768x561-250x280.jpg" alt="" class="w-100 project__img">
+
+                                <span class="project__item-name ps-absolute">Thiết kế căn hộ Vinhome Central Park</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- procedure -->
+            <div class="procedure">
+                <div class="grid wide">
+                    <div class="text-head">
+                        <span class="text-mini-heading">QUY TRÌNH</span>
+                        <h3 class="text-heading">6 BƯỚC TRIỂN KHAI DỰ ÁN</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">1</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Lên ý tưởng</span>
+                                    <span class="procedure__item-desc">Tiếp nhận các yêu cầu của khách hàng và lên ý tưởng thiết kế.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/12-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">2</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Khảo sát thực tế</span>
+                                    <span class="procedure__item-desc">Đội ngũ chuyên gia sẽ qua khảo sát công trình và đo đạc thực tế.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/22-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">3</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Báo giá & ký Hợp đồng</span>
+                                    <span class="procedure__item-desc">Hài lòng với báo giá đưa ra, hai bên sẽ ký hợp đồng hợp tác thiết kế.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/32-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">4</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Thiết kế mặt bằng 2D, 3D</span>
+                                    <span class="procedure__item-desc">Sau ký hợp đồng thiết kế chúng tôi sẽ lên phối cảnh 3D và bản vẽ thi công.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/42-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">5</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Lắp đặt Thi công</span>
+                                    <span class="procedure__item-desc">Khi bản thiết kế hoàn thành, đội ngũ KTS sẽ tiến hành thi công công trình.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/52-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="procedure__item ps-relative">
+                                <div class="procedure__ordinal-number ps-absolute">6</div>
+                                <div class="procedure__title">
+                                    <span class="procedure__item-name">Nghiệm thu Dự án</span>
+                                    <span class="procedure__item-desc">Tiến hành Nghiệm thu dự án sau khi Hoàn thành các hạng mục theo cam kết.</span>
+                                    <div class="procedure__item-wrap-img">
+                                        <img src="https://vdesign.exdomain.net/image/cache/catalog/icon/62-80x80.png" alt="" class="procedure__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- design -->
+            <div class="design">
+                <div class="desgin__head">
+                    <h3 class="desgin__heading">DỰ ÁN THIẾT KẾ NỔI BẬT</h3>
+                    <div class="desgin__mini-heading flex al-center">
+                        <span class="desgin__title desgin__title--primary">Thiết kế nội thất chung cư</span>
+                        <span class="desgin__title">Thiết kế nội thất biệt thự</span>
+                        <span class="desgin__title">Thiết kế nội thất khách sạn</span>
+                    </div>
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-4 m-6">
+                                <div class="design__item ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/thiet-ke-noi-that-chung-cu-80m2-3-500x550.jpg" alt="" class="desgin__img w-100">
+                                    <div class="design__wrap ps-absolute">
+                                        <div class="design__overlay ps-relative">
+                                            <a href="#" class="design__item-icon ps-absolute">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                        <span class="design__name">
+                                            Thiết kế nội thất chung cư HomyLand Riverside
+                                        </span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col l-4 m-6">
+                                <div class="design__item ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/2-mau-thiet-ke-noi-that-chung-cu-70m2-hien-dai-ma-khong-ton-nhieu-chi-phi-b1-1565098248-445-width600height450-500x550.jpg" alt="" class="desgin__img w-100">
+                                    <div class="design__wrap ps-absolute">
+                                        <div class="design__overlay ps-relative">
+                                            <a href="#" class="design__item-icon ps-absolute">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                        <span class="design__name">
+                                            Thiết kế nội thất chung cư Mỹ Đình Pearl
+                                        </span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col l-4 m-6">
+                                <div class="design__item ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/thiet-ke-noi-that-chung-cu-500x550.jpg" alt="" class="desgin__img w-100">
+                                    <div class="design__wrap ps-absolute">
+                                        <div class="design__overlay ps-relative">
+                                            <a href="#" class="design__item-icon ps-absolute">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                        <span class="design__name">
+                                            Thiết kế nội thất chung cư Skylake Phạm Hùng
+                                        </span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="text-head">
+                    <span class="text-mini-heading">QUY TRÌNH</span>
+                    <h3 class="text-heading">6 BƯỚC TRIỂN KHAI DỰ ÁN</h3>
+                </div>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="blog__item">
+                                <div class="blog__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/kien-truc-biet-thu-hien-dai-370x240.jpg" alt="" class="w-100 blog__img">
+                                </div>
+                                <div class="blog__date">
+                                    <span class="blog__date-day">02/</span>
+                                    <span class="blog__date-moth-year">12/2022</span>
+                                </div>
+                                <h3 class="blog__name">Những mẫu thiết kế biệt thự hiện đại đẹp 2021</h3>
+                                <span class="blog__desc">Thiết kế nhà đẹp, biệt thự hiện đại luôn là niềm cảm xúc thăng hoa của các chủ đầu tư hiện nay.</span>
+                                <a href="#" class="blog__btn">
+                                    Xem thêm
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="blog__item">
+                                <div class="blog__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/kien-truc-su-hd4-370x240.jpg" alt="" class="w-100 blog__img">
+                                </div>
+                                <div class="blog__date">
+                                    <span class="blog__date-day">02/</span>
+                                    <span class="blog__date-moth-year">12/2022</span>
+                                </div>
+                                <h3 class="blog__name">Kiến trúc sư tư vấn thiết kế căn hộ 50m² ấm cúng cho người trẻ độc thân</h3>
+                                <span class="blog__desc">Nhận về tay không gian thô, gia chủ muốn nhờ kiến trúc sư tư vấn thiết kế trong khoảng giá 150 triệu đồng.</span>
+                                <a href="#" class="blog__btn">
+                                    Xem thêm
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="blog__item">
+                                <div class="blog__wrap-img ps-relative">
+                                    <img src="https://vdesign.exdomain.net/image/cache/catalog/news/kien-truc-resort-1-370x240.jpg" alt="" class="w-100 blog__img">
+                                </div>
+                                <div class="blog__date">
+                                    <span class="blog__date-day">02/</span>
+                                    <span class="blog__date-moth-year">12/2022</span>
+                                </div>
+                                <h3 class="blog__name">Resort toàn bích giữa lưng chừng trời</h3>
+                                <span class="blog__desc">Tọa lạc giữa trái tim của Thủ Thiêm - trung tâm tài chính, văn hóa và công nghệ mới của thành phố Hồ Chí Minh – lần đầu tiên</span>
+                                <a href="#" class="blog__btn">
+                                    Xem thêm
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <label for="contact__option-check" class="contact">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="map">
+                                <span class="contact__mini-heading">LIÊN HỆ CHI TIẾT</span>
+                                <h3 class="contact__heading">CHÚNG TÔI CÓ THỂ GIÚP BẠN</h3>
+                                <div class="contact__wrap-img hide-on-tablet-mobile">
+                                    <img src="https://vdesign.exdomain.net/image/catalog/icon/imgpsh_fullsize_anim.png" alt="" class="contact__img">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <form action="" class="contact__form">
+                                <h3 class="contact__form-heading">Bạn đang cần tư vấn</h3>
+                                <span class="contact__form-desc">Nhận tư vấn trực tiếp từ các kiến trúc sư hàng đầu, quý khách vui lòng để lại thông tin cá nhân để chúng tôi kịp thời hỗ trợ</span>
+                                <input type="text" class="contact__form-information" placeholder="Email">
+                                <input type="text" class="contact__form-information" placeholder="Tên">
+                                <input type="text" class="contact__form-information" placeholder="Điện thoại">
+                                <label for="contact__option-check" class="contact__option ps-relative">
+                                    <span>Nội dung cần tư vấn</span>
+                                    <input type="checkbox" name="" id="contact__option-check">
+                                    <i class="contact__option-icon fa-solid fa-chevron-down"></i>
+                                    <ul class="contact__form-list ps-absolute">
+                                        <li class="contact__form-item">
+                                            <a href="#" class="contact__form-link">Thiết kế nội thất chung cư</a>
+                                        </li>
+                                        <li class="contact__form-item">
+                                            <a href="#" class="contact__form-link">Thiết kế nội thất biệt thự</a>
+                                        </li>
+                                        <li class="contact__form-item">
+                                            <a href="#" class="contact__form-link">Thiết kế nội thất khách sản</a>
+                                        </li>
+                                        <li class="contact__form-item">
+                                            <a href="#" class="contact__form-link">Thi công nội thất</a>
+                                        </li>
+                                    </ul>
+                                </label>
+                                <a href="#" class="contact__btn">
+                                    Đăng ký
+                                    <i class="contact__btn-icon fa-solid fa-arrow-right"></i>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <!-- sponsor -->
+            <div class="sponsor">
+                <div class="grid wide">
+                    <span class="sponsor__mini-heading">ĐỐI TÁC</span>
+                    <h3 class="sponsor__heading">HƠN 200+ ĐƠN VỊ CUNG CẤP THIẾT BỊ</h3>
+                    <div class="row">
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/ashley-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/ikea-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/nadu-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/formaideale-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/dietiker-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-6">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/linax-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                        <div class="col l-1-7 m-3 c-0">
+                            <div class="sponor__wrap-img">
+                                <img src="https://vdesign.exdomain.net/image/cache/catalog/partner_logo_new/hoaphat-150x100.png" alt="" class="sponor__img w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer ps-relative">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12 tl-center ">
+                        <div class="footer__wrap-logo">
+                            <img src="https://vdesign.exdomain.net/image/catalog/logo/vdesign_logo_white.png" alt="" class="footer__logo">
+                        </div>
+                        <div class="footer__address">
+                            <h3 class="footer__address-name">VP Hà Nội</h3>
+                            <span class="footer__address-home">Địa chỉ: A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm</span>
+                            <span class="footer__address-phone">Hotline: 01234567890</span>
+                            <span class="footer__address-mail">Email: contact@yourdomain.net</span>
+                        </div>
+                        <div class="footer__address">
+                            <h3 class="footer__address-name">CN Hồ Chí Minh</h3>
+                            <span class="footer__address-home">Địa chỉ:  25 Quang Trung, Phường 6, Quận 10</span>
+                            <span class="footer__address-phone">Hotline: 01234567989</span>
+                            <span class="footer__address-mail">Email: contact@yourdomain.nett</span>
+                        </div>
+                        <div class="footer__address">
+                            <h3 class="footer__address-name">Xưởng sản xuất</h3>
+                            <span class="footer__address-home">Địa chỉ: đường Cổ Nhuế, Q.Từ Liêm, Hà Nội</span>
+                            <span class="footer__address-phone">Hotline: 01234567689</span>
+                            <span class="footer__address-mail">Email: contact@yourdomain.nett</span>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 tl-center">
+                        <h2 class="footer__name ps-relative">Thông Tin</h2>
+                        <a href="#" class="footer__name-desc">Về chúng tôi</a>
+                        <a href="#" class="footer__name-desc">Thông tin giao hàng</a>
+                        <a href="#" class="footer__name-desc">Chính sách bảo mật</a>
+                        <a href="#" class="footer__name-desc">Điều khoản & Điều kiên</a>
+                        <a href="#" class="footer__name-desc">Liên hệ</a>
+                    </div>
+                    <div class="col l-3 m-6 c-12 tl-center mt-20px-mobile">
+                        <h2 class="footer__name ps-relative">Sản Phẩm Nội Thất</h2>
+                        <a href="#" class="footer__name-desc">Đồ gỗ phòng khách</a>
+                        <a href="#" class="footer__name-desc">Đồ gỗ phòng ngủ</a>
+                        <a href="#" class="footer__name-desc">Đồ gỗ nhà bếp</a>
+                        <a href="#" class="footer__name-desc">Đồ gỗ văn phòng</a>
+                        <a href="#" class="footer__name-desc">Đồ gỗ trang trí</a>
+                    </div>
+                    <div class="col l-3 m-6 c-12 tl-center mt-20px-mobile">
+                        <h2 class="footer__name ps-relative">Facebook</h2>
+                        <div class="footer__wrap-img-fb ps-relative">
+                            <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/311978652_10161713091011729_8457832338774311713_n.png?stp=dst-png_p206x206&_nc_cat=1&ccb=1-7&_nc_sid=dd9801&_nc_ohc=C6RbLqS1LSEAX9iTq-o&_nc_ht=scontent.fdad3-4.fna&oh=00_AfAVF19_2TzSzZqJ7sh9hipodllUISGDr1xBle2gCrA74Q&oe=638E5A94" alt="" class="footer__img-fb w-100">
+                            <div class="footer__desc-fb ps-absolute flex">   
+                                <a href="#" class="footer__wrap-img-logo ps-relative">
+                                    <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-1/58978526_10158354585751729_7411073224387067904_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=NlwrBrbLoakAX9pblCs&tn=GR4KGdJXAtqMlGkI&_nc_ht=scontent.fhan2-4.fna&edm=ADwHzz8EAAAA&oh=00_AfCNNk71moGrn09rzBurh4ikeg_Sjsx1hAxZc94VbIsU-Q&oe=63B126A5" alt="" class="footer__logo-fb">
+                                </a>
+                                <div class="footer__title-fb">
+                                    <a href="#" class="footer__name-fb">
+                                        Facebook
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </a>
+                                    <span class="footer__like-fb">178.969.356 lượt thích</span>
+                                </div>
+                            </div>
+                            <div class="footer__page-fb flex ps-absolute">
+                                <a href="#" class="footer__like-page-fb">
+                                    <i class="footer__page-fb-icon fa-brands fa-square-facebook"></i>
+                                    Thích trang
+                                </a>
+                                <a href="#" class="footer__share-page-fb">
+                                    <i class="footer__page-share-icon fa-solid fa-share"></i>
+                                    Chia sẻ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__design">
+                <span class="footer__design-desc">© Copyright 2020-2022 VDesign. Thiết kế bởi <a href="#" class="footer__desgin-name">Lee</a></span>
+            </div>
+        </div>
+        <div class="contact-phone">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <label for="check-open-messenger" class="contact-fb">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </label>
+        <input type="checkbox" name="" id="check-open-messenger">
+        <div class="contact-fb__chat">
+            <div class="contact-fb__chat-head flex al-center">
+                <div class="contact-fb__chat-wrap-logo">
+                    <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-1/273408057_112985774632854_4124419969497870844_n.jpg?stp=c0.1.240.240a_dst-jpg_p240x240&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_ohc=x4YSvwmoIrgAX_nLzAI&_nc_oc=AQmQTiybIT6B-Q2U685GOuQ3N3A-HSXU6hrjy1anmSWejCJJcmTb4NO08tr-_T8L634&_nc_ht=scontent.fdad1-3.fna&oh=00_AfCYP33BdtA8T4PMD6R7IiubK4F21O2r10cy7yMAfb2HpQ&oe=638E282B" alt="">
+                </div>
+                <div class="contatc-fb__help-settings">
+                        <i class="contatc-fb__help-settings-icon-one fa-solid fa-ellipsis"></i>
+                        <label for="check-open-messenger" class="contatc-fb__help-settings-icon-two fa-solid fa-minus"></label>
+                </div>
+            </div>
+            <h3 class="contact-fb__name">Chat với ExShop</h3>
+            <span class="contact-fb__desc">Hi! How can we help you?</span>
+            <a href="#" class="contact-fb__btn">Bắt đầu chat</a>
+            <span class="contact-fb__source">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                Do messenger cung cấp
+            </span>
+        </div>
+    </div>
+</body>
+</html>
